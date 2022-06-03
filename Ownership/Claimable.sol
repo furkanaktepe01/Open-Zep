@@ -9,7 +9,6 @@ contract Claimable is Ownable {
     modifier onlyPendingOwner() {
 
         require(msg.sender == pendingOwner);
-
         _;
     }
 

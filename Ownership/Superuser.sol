@@ -15,14 +15,12 @@ contract Superuser is Ownable, RBAC {
     modifier onlySuperuser() {
 
         checkRole(msg.sender, ROLE_SUPERUSER);
-
         _;
     }
 
     modifier onlyOwnerOrSuperuser() {
 
         require(msg.sender == owner || isSuperuser(msg.sender));
-
         _;
     }
 

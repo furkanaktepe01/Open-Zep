@@ -18,7 +18,6 @@ contract Heritable is Ownable {
     modifier onlyHeir() {
 
         require(msg.sender == heir_);
-        
         _;
     }
 
