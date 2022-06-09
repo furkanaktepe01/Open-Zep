@@ -1,0 +1,5 @@
+
+
+contract IncreasingPriceCrowdsale is TimedCrowdsale {
+
+}
