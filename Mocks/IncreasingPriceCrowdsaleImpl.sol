@@ -1,6 +1,7 @@
 pragma solidity ^0.4.24;
 
 import "../Crowdsale/Price/IncreasingPriceCrowdsale.sol";
+import "../Token/ERC20/ERC20.sol";
 import "../Math/SafeMath.sol";
 
 contract IncreasingPriceCrowdsaleImpl is IncreasingPriceCrowdsale {
